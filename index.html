@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Moeda</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="containerPaiDeTodos">
+      <h1>SPLITER</h1>
+
+      <div id="container">
+        <!-- div onde contém meus campos do conversor -->
+        <div class="campos">
+          <!-- primeiro campo onde digitamos o valor -->
+          <div id="textoEvalor">
+            <div id="title">
+              <p>Bill</p>
+            </div>
+            <div id="valor">
+              <!-- <p>
+                <select name="moedas" id="moedas">
+                  <option value="$$" id="dolar">$$</option>
+                  <option value="ЄЄ" id="euro">ЄЄ</option>
+                  <option value="££" id="libra">££</option>
+                </select>
+              </p> -->
+              <input type="number" name="num" id="num" />
+              <img src="imagem/icon-dollar.svg" alt="" />
+            </div>
+          </div>
+          <!-- segundo campo onde selecionamos a porcentagem -->
+          <div id="textoEselecionarPorcentagem">
+            <div id="titile3">
+              <p>Select Tip %</p>
+            </div>
+            <div class="selecionarPorcetagem">
+              <button class="buttons" id="0" value="5">5%</button>
+              <button class="buttons" id="1" value="10">10%</button>
+              <button class="buttons" id="2" value="15">15%</button>
+              <button class="buttons" id="3" value="25">25%</button>
+              <button class="buttons" id="4" value="50">50%</button>
+              <button id="buttonCustom" class="buttons" value="">Custom</button>
+            </div>
+          </div>
+          <!-- terceiro campo onde digitamos o número de pessoas -->
+          <div id="textoEnumeroDePessoas">
+            <div id="title2">
+              <p>Number of People</p>
+            </div>
+            <div>
+              <input type="number" name="num" id="numeroDePessoas" />
+              <img id="person" src="imagem/icon-person.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div id="res">
+          <div id="textoEJuros">
+            <div id="title3">
+              <p>Tip Amount</p>
+              <p class="person">/ person</p>
+            </div>
+            <div id="juros">
+              <h2 id="gorjetas">$0.00</h2>
+            </div>
+          </div>
+          <div id="textoETotal">
+            <div id="title4">
+              <p>Total</p>
+              <p class="person">/ person</p>
+            </div>
+            <div id="juros">
+              <h2 id="total">$0.00</h2>
+            </div>
+          </div>
+          <div id="resetar">
+            <button id="buttonReset" onclick="reset()">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="aula02.js"></script>
+  </body>
+</html>
