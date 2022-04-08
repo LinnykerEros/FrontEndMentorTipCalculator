@@ -17,17 +17,7 @@ button {
   font-size: 24px;
   cursor: pointer;
 }
-#buttonCustom {
-  background: hsl(189, 41%, 97%);
-  color: hsl(183, 100%, 15%);
-  font-family: "Fredoka", sans-serif;
-  width: 90px;
-  height: 40px;
-  border-radius: 5px;
-  border: none;
-  font-size: 22px;
-  cursor: pointer;
-}
+
 input {
   font-size: 24px;
   width: 350px;
@@ -39,6 +29,29 @@ input {
   background-color: hsl(186, 14%, 43%);
   border: none;
 }
+input[name="buttonCustom"] {
+  background: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  font-family: "Fredoka", sans-serif;
+  width: 90px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+}
+input[name="buttonCustom"]:focus {
+  outline: 2px solid hsl(172, 67%, 45%) !important;
+}
+#num:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
+#numeroDePessoas:focus {
+  outline: 2px solid hsl(172, 67%, 45%);
+}
+
 img {
   /* margin-left: 10px; */
   position: relative;
@@ -123,6 +136,10 @@ img {
   gap: 8rem;
   align-items: center;
   margin-top: 20px;
+}
+#title2 {
+  display: flex;
+  gap: 8rem;
 }
 #title3 {
   margin-top: 10px;
