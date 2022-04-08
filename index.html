@@ -28,7 +28,7 @@
                 </select>
               </p> -->
               <input type="number" name="num" id="num" />
-              <img src="imagem/icon-dollar.svg" alt="" />
+              <img src="images/icon-dollar.svg" alt="" />
             </div>
           </div>
           <!-- segundo campo onde selecionamos a porcentagem -->
@@ -42,17 +42,26 @@
               <button class="buttons" id="2" value="15">15%</button>
               <button class="buttons" id="3" value="25">25%</button>
               <button class="buttons" id="4" value="50">50%</button>
-              <button id="buttonCustom" class="buttons" value="">Custom</button>
+              <input
+                type="num"
+                id="5"
+                name="buttonCustom"
+                class="buttons"
+                value=""
+                placeholder="Custom"
+                disabled
+              />
             </div>
           </div>
           <!-- terceiro campo onde digitamos o número de pessoas -->
           <div id="textoEnumeroDePessoas">
             <div id="title2">
               <p>Number of People</p>
+              <p id="erro"></p>
             </div>
             <div>
-              <input type="number" name="num" id="numeroDePessoas" />
-              <img id="person" src="imagem/icon-person.svg" alt="" />
+              <input type="number" name="num" id="numeroDePessoas" disabled />
+              <img id="person" src="images/icon-person.svg" alt="" />
             </div>
           </div>
         </div>
