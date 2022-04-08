@@ -107,6 +107,9 @@ function gorjetaDoGarçomCustom(valorDoCustom, resultado1) {
   gorjeta.innerHTML = `$${resultado}`;
   resultado = 0;
 }
+function focusInput() {
+  document.getElementById("num").focus();
+}
 
 function reset() {
   location.reload();
