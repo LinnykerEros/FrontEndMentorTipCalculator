@@ -7,7 +7,7 @@
     <title>Conversor de Moeda</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onload="focusInput()">
     <div id="containerPaiDeTodos">
       <h1>SPLITER</h1>
 
@@ -27,7 +27,7 @@
                   <option value="££" id="libra">££</option>
                 </select>
               </p> -->
-              <input type="number" name="num" id="num" />
+              <input type="number" name="num" id="num" placeholder="$0.00" />
               <img src="images/icon-dollar.svg" alt="" />
             </div>
           </div>
@@ -60,7 +60,13 @@
               <p id="erro"></p>
             </div>
             <div>
-              <input type="number" name="num" id="numeroDePessoas" disabled />
+              <input
+                type="number"
+                name="num"
+                id="numeroDePessoas"
+                placeholder="0"
+                disabled
+              />
               <img id="person" src="images/icon-person.svg" alt="" />
             </div>
           </div>
