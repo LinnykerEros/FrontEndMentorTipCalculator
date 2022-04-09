@@ -16,7 +16,7 @@ valorDigitado.addEventListener("change", (evento) => {
     document.getElementById("numeroDePessoas").removeAttribute("disabled"); //habilita meu input, inputNumeroDePessoas, caso exista algo em valorDigitado.
 
     //se existir alguma coisa escrevo na minha divtotal o valor.
-    total.innerHTML = `$${evento.target.value}.00`;
+    total.innerHTML = `$${evento.target.value}`;
     document.addEventListener("click", (evento) => {
       //verifico se o click foi no botão, se sim, eu coloco 0.0 na minha divGorjeta.
       if (evento.target.matches(".buttons")) {
@@ -28,7 +28,7 @@ valorDigitado.addEventListener("change", (evento) => {
       if (inputNumeroDePessoas.value == "") {
         document.getElementById("5").setAttribute("disabled", true); //desabilito o meu input CUSTOM, se não existir nada no meu inputNumeroDePessoas.
         //se o meu input inputNumeroDePessoas for vazio
-        total.innerHTML = `$${evento.target.value}.00`; //escrevo na minha div total o valor
+        total.innerHTML = `$${evento.target.value}`; //escrevo na minha div total o valor
         gorjeta.innerHTML = `$0.00`; // e coloco 0.00 caso aja alguma coisa, onde não é para ter
         limpaErro(); // se meu input existiver sem nada depois de exibir o erro, eu limpo.
         document.addEventListener("click", (evento) => {
