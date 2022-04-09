@@ -1,1 +1,1 @@
-# TipCalculator link: https://linnykereros.github.io/TipCalculator/
+# TipCalculator link: https://linnykereros.github.io/FrontEndMentorTipCalculator/
